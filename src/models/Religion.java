@@ -35,9 +35,10 @@ public class Religion {
 
 	@Override
 	public String toString() {
-		String str="------------------\nReligion [name=" + name + " , coutries :" + countries.size() ;
+		String str="------------------\nReligion name=" + name + " ,  " + countries.size() +" coutries :" ;
 		for(Country c : countries)
-			str+=c+" \n";
+			str+=" \n"+c;
+		str+="\n------------------";
 		return str;
 	}
 
